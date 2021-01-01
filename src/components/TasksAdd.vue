@@ -34,7 +34,7 @@ export default {
         return store.getters.selectedTask.title
       },
       set (value) {
-        this.$set(store.commit('editTask', { title: value }))
+        store.commit('editTask', { title: value })
       }
     }
   }
